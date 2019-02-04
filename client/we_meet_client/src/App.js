@@ -5,6 +5,7 @@ import { TailwindThemeProvider } from 'tailwind-react-ui';
 import Hero from './components/ui-components/Hero'
 import Footer from './components/ui-components/Footer'
 import EventsCarousel from './components/ui-components/EventsCarousel';
+import ExploreCategories from './components/ui-components/ExploreCategories';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
           <AppHeader />
           <Hero />
           <EventsCarousel />
+          <ExploreCategories />
           <Footer />
         </TailwindThemeProvider>
       </>
