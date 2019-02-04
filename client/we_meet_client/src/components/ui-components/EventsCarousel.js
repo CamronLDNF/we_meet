@@ -33,7 +33,7 @@ class EventsCarousel extends Component {
 
     return (
       <div style={{margin:"50px", paddingLeft: "8rem", paddingRight: "4rem"}}>
-        <h1 style={{fontSize: "1rem", marginBottom: "1rem"}}>EVENTS NEAR YOU</h1>
+        <h1 style={{fontSize: "24px", fontWeight:"600", color:"#2e3e48", marginBottom: "1rem"}}>Events near you</h1>
         <Carousel renderBottomCenterControls="null" slidesToShow="3">
           <Card border shadow maxW="sm" style={{height:"150px", marginRight:"15px", backgroundColor:"#F1F5F8", textAlign:"Center"}}>Event1</Card>
           <Card border shadow maxW="sm" style={{height:"150px", marginRight:"15px", backgroundColor:"#F1F5F8", textAlign:"Center"}}>Event2</Card>

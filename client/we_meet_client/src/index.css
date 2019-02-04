@@ -16,3 +16,17 @@ code {
 #header-1-menu {
   visibility: hidden;
 }
+
+.card_container {
+  position: relative;
+  text-align: center;
+  /* color: white; */
+}
+
+.card_text_centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
