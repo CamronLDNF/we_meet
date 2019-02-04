@@ -17,10 +17,15 @@ code {
   visibility: hidden;
 }
 
-.card_container {
+.card {
   position: relative;
   text-align: center;
-  /* color: white; */
+  top: 0;
+  transition: top ease 0.1s;
+}
+.card:hover {
+  top: -3px;
+  cursor: pointer;
 }
 
 .card_text_centered {
@@ -29,4 +34,10 @@ code {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
