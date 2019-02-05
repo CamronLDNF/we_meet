@@ -83,24 +83,17 @@ class EventsCarousel extends Component {
               {moment(event.date).format("MMM")}
               </div>
             </div>
-            <CardBody style={{textAlign:"left"}}>
-              <div style={{color:"rgba(46,62,72,.6)", fontSize:"16px", fontWeight:"400", lineHeight:"16px"}}>{moment(event.date).format("dddd, MMMM DD, HH:mm")}</div>
+            <CardBody style={{textAlign:"left", paddingBottom:"8px", paddingTip:"8px"}}>
+              <div style={{color:"rgba(46,62,72,.6)", fontSize:"16px", fontWeight:"400", lineHeight:"16px", paddingBottom:"3px"}}>{moment(event.date).format("dddd, MMMM DD, HH:mm")}</div>
               <div style={{color:"#2e3e48", fontSize:"20px", fontWeight:"600", marginTop:"2px"}}>{event.title}</div>
             </CardBody>
-            
-            {/* NOTE: probably easiest to just position the avatar same way as with "20 Feb" tag,
-            then just add padding to the text next to it. */}
-            <Row>
-              <Col w="1/3">
-                <img src={event.avatar} style={{alignment:"left", height:"70px", borderRadius:"80px"}}/>
-              </Col>
-              <Col w="1/3">
-                <div style={{width:"80%", textAlign:"left"}}>
-                  <div>Hosted by {event.organizer}</div>
-                  <div>From {event.group}</div>
+              <div style={{height:"40px"}}>
+                <img className="bottom-left" src={event.avatar} style={{height:"40px", borderRadius:"80px"}}/>
+                <div style={{width:"80%", textAlign:"left", paddingLeft:"70px", lineHeight:"20px", fontSize:"14px", fontWeight:"400", color:"rgba(46,62,72,.6)"}}>
+                  <div >Hosted by {event.organizer}</div>
+                  <div>From <span style={{color:"#353e48", fontWeight:"500"}}>{event.group}</span></div>
                 </div>
-              </Col>
-            </Row>
+              </div>
           </Card>
           <div style={{fontSize: "16px", fontWeight:"600", color:"#2e3e48", marginBottom: "1rem"}}>{event.name}</div>
         </Box>
@@ -120,10 +113,3 @@ class EventsCarousel extends Component {
 }
 
 export default EventsCarousel;
-
-{/* <Card className="card" border shadow maxW="sm" style={{height:"150px", marginTop:"5px", marginRight:"15px", backgroundColor:"#F1F5F8", textAlign:"Center"}}>Event1</Card>
-<Card className="card" border shadow maxW="sm" style={{height:"150px", marginTop:"5px", marginRight:"15px", backgroundColor:"#F1F5F8", textAlign:"Center"}}>Event2</Card>
-<Card className="card" border shadow maxW="sm" style={{height:"150px", marginTop:"5px", marginRight:"15px", backgroundColor:"#F1F5F8", textAlign:"Center"}}>Event3</Card>
-<Card className="card" border shadow maxW="sm" style={{height:"150px", mmarginTop:"5px", arginRight:"15px", backgroundColor:"#F1F5F8", textAlign:"Center"}}>Event4</Card>
-<Card className="card" border shadow maxW="sm" style={{height:"150px",marginTop:"5px",  marginRight:"15px", backgroundColor:"#F1F5F8", textAlign:"Center"}}>Event5</Card>
- */}
