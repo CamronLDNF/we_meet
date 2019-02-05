@@ -87,6 +87,9 @@ class EventsCarousel extends Component {
               <div style={{color:"rgba(46,62,72,.6)", fontSize:"16px", fontWeight:"400", lineHeight:"16px"}}>{moment(event.date).format("dddd, MMMM DD, HH:mm")}</div>
               <div style={{color:"#2e3e48", fontSize:"20px", fontWeight:"600", marginTop:"2px"}}>{event.title}</div>
             </CardBody>
+            
+            {/* NOTE: probably easiest to just position the avatar same way as with "20 Feb" tag,
+            then just add padding to the text next to it. */}
             <Row>
               <Col w="1/3">
                 <img src={event.avatar} style={{alignment:"left", height:"70px", borderRadius:"80px"}}/>
